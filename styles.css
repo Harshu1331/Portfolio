@@ -1,1 +1,115 @@
-/* Stylying */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 33) !important;
+    color: white !important;
+}
+
+nav {
+    background-color: rgb(15, 15, 114);
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#element {
+    color: blueviolet;
+}
+
+nav ul {
+    display: flex;
+    margin-top: 15px;
+}
+
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: border-radius, border, background-color, padding 0.5s ease;
+}
+
+.projectsContainer a {
+    text-decoration: none;
+    color: brown;
+}
+
+.card-link:hover::before {
+    content: "< ";
+}
+
+.card-link:hover::after {
+    content: " />";
+}
+
+nav ul li a:hover {
+    border: 2px solid white;
+    padding: 15px 15px;
+    border-radius: 10px;
+    background-color: rgb(25, 150, 188);
+}
+
+.firstSec {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: red; */
+    height: 700px;
+    border-radius: 50px;
+}
+
+.h2head {
+    margin-left: 45vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card-text {
+    font-family: cursive;
+}
+
+.card-link {
+    font-family: monospace;
+}
+
+.secondSec {
+    /* background-color: greenyellow; */
+    height: 700px;
+}
+
+.secondSec .projectsContainer {
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 10px; */
+}
+
+.secondSec .projectsContainer .card {
+    margin-top: 20px;
+}
+
+footer {
+    height: 100px;
+    background: linear-gradient(90deg, rgb(15 10 20) 15%, rgb(72 37 83) 50%, rgb(4 5 75) 91%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Negotiable */
+footer .bx {
+    font-size: 30px;
+}
